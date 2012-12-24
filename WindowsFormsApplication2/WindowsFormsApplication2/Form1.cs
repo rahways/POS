@@ -400,7 +400,7 @@ namespace WindowsFormsApplication2
         public void Process_Message()
         {
             int character_index;
-            int startIndex = 0;
+            int startIndex = 0; // for testing
             string temp_str;
             List <char> id = new List <char>();
             if (true)
