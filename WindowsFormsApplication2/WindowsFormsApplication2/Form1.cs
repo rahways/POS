@@ -478,7 +478,7 @@ namespace WindowsFormsApplication2
                                 id.Insert(12, '0');
                             }
                             id.RemoveAll(item => item == '-');
-                            Received_Card_ID = new string(id.ToArray());
+                            Received_Card_ID = new string(id.ToArray()).ToUpper();
                             int j;
                             for (j = 0; j < Card.Count; j++)
                             {
@@ -512,7 +512,7 @@ namespace WindowsFormsApplication2
                                 i++;
                             } 
                             id.RemoveAll(item => item == '-');
-                            Received_Card_ID = new string(id.ToArray());
+                            Received_Card_ID = new string(id.ToArray()).ToUpper();
                             Received_Weight = (float)Convert.ToDouble(Message_Buffer.Substring(Message_Buffer.LastIndexOf('+') + 1));
                             //Form1 form1 = new Form1();
                             Update_Card();
