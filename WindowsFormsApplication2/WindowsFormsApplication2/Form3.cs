@@ -40,8 +40,8 @@ namespace WindowsFormsApplication2
         private void button1_Click(object sender, EventArgs e)
         {
             Coordinator_port = comboBox1.Text;
-            //Printer_port = comboBox2.Text;
-            Printer_port = null;
+            Printer_port = comboBox2.Text;
+            //Printer_port = null;
             if (Coordinator_port == Printer_port)
             {
                 MessageBox.Show("Cannot assign same ports to both devices", "Configuration Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

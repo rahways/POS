@@ -46,8 +46,8 @@ namespace WindowsFormsApplication2
         public List<string> DI_List_file_lines = new List<string>(); //File.ReadAllLines(@"E:\Moshe_Project\test_POS\Debug\DI_list.csv");
         int i = 0;
         DataRow[] row_RFID_Price = new DataRow[100];
-        SerialPort Coordinator_Port = new SerialPort();
-        SerialPort Printer_Port = new SerialPort();
+        public SerialPort Coordinator_Port = new SerialPort();
+        public SerialPort Printer_Port = new SerialPort();
         //public string[] Item_Description = {   "Tomato",
         //                                       "Potato",
         //                                       "Onion",
@@ -135,7 +135,7 @@ namespace WindowsFormsApplication2
             }
 
         }
-        private int findCardIndex(string card_id)
+        public int findCardIndex(string card_id)
         {
             for (int j = 0; j < Card.Count; j++)
             {

@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.print_invoice = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,11 +69,22 @@
             this.dataGridView2.Size = new System.Drawing.Size(637, 435);
             this.dataGridView2.TabIndex = 0;
             // 
+            // print_invoice
+            // 
+            this.print_invoice.Location = new System.Drawing.Point(12, 7);
+            this.print_invoice.Name = "print_invoice";
+            this.print_invoice.Size = new System.Drawing.Size(89, 23);
+            this.print_invoice.TabIndex = 1;
+            this.print_invoice.Text = "Print Invoice";
+            this.print_invoice.UseVisualStyleBackColor = true;
+            this.print_invoice.Click += new System.EventHandler(this.print_invoice_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 471);
+            this.Controls.Add(this.print_invoice);
             this.Controls.Add(this.dataGridView2);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form2";
@@ -87,6 +99,7 @@
         #endregion
 
         public System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button print_invoice;
 
     }
 }

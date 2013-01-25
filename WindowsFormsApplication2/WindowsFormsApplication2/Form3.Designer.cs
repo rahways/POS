@@ -57,7 +57,6 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(191, 80);
             this.comboBox2.Name = "comboBox2";
